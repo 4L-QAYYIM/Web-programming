@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт студента: Закиров Альберт</title>
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tasks.css"> 
+
+    <style>
+        .university-info {
+            border: 2px dashed var(--secondary-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .university-info:hover {
+            transform: scale(1.01);
+        }
+
+        #tasks-section h2 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .details ul li {
+            padding-left: 10px;
+            border-left: 3px solid var(--primary-color);
+        }
+    </style>
 </head>
 <body>
 
-    <header class="header">
+    <header class="header" style="border-bottom: 5px solid #007BFF; background-image: linear-gradient(to bottom, #2c2c2c, #1a1a1a);">
         <h1>Сайт студента группы 3314</h1>
         <p>Закиров Альберт Артурович</p>
     </header>
@@ -34,19 +57,19 @@
                     <li>ФИО: Закиров Альберт Артурович</li>
                     <li>Группа: 3314</li>
                     <li>Будущая профессия: IT-специалист</li>
-                    <li>Электронная почта: <a href="mailto:zakirovalbert2050@gmail.com">zakirovalbert2050@gmail.com</a></li>
-                    <li>Мои увлечения: Баскетбол, Программирование, Английский язык</li>
+                    <li>Почта: <a href="mailto:zakirovalbert2050@gmail.com" style="color: #ffc300; font-weight: bold;">zakirovalbert2050@gmail.com</a></li>
+                    <li>Увлечения: Баскетбол, Программирование, Английский язык</li>
                 </ul>
             </div>
         </section>
 
         <section class="university-info" id="university">
-            <h2>Мой ВУЗ - Нижневартовский государственный университет (НВГУ)</h2>
-            <p>
-                Нижневартовский государственный университет (НВГУ) - один из ведущих вузов Ханты-Мансийского автономного округа – Югры. Он готовит высококвалифицированных специалистов в различных областях, включая информационные технологии. НВГУ активно развивает научную деятельность и предоставляет студентам современные образовательные программы.
+            <h2>Мой ВУЗ - НВГУ</h2>
+            <p style="font-style: italic; opacity: 0.9;">
+                Нижневартовский государственный университет (НВГУ) - один из ведущих вузов Ханты-Мансийского автономного округа – Югры. Он готовит высококвалифицированных специалистов в различных областях.
             </p>
             <p class="link-to-nvsu">
-                Официальный сайт ВУЗа: <a href="https://nvsu.ru" target="_blank">https://nvsu.ru</a>
+                Официальный сайт: <a href="https://nvsu.ru" target="_blank">https://nvsu.ru</a>
             </p>
         </section>
 
@@ -73,7 +96,7 @@
                 <div class="task-demo">
                     <table class="styled-table">
                         <tbody>
-                            <tr style="background-color: var(--primary-color);">
+                            <tr style="background-color: #007BFF; color: white;">
                                 <td colspan="8">6</td>
                             </tr>
                             <tr>
@@ -102,7 +125,7 @@
                             <tr>
                                 <td class="primary-cell" colspan="6">6</td>
                             </tr>
-                            <tr style="background-color: var(--primary-color);">
+                            <tr style="background-color: #007BFF; color: white;">
                                 <td colspan="8">6</td>
                             </tr>
                         </tbody>
@@ -141,15 +164,11 @@
                                 <div class="radio-options">
                                     <label class="radio-option">
                                         <input type="radio" name="like" value="yes">
-                                        Yes
+                                        Да
                                     </label>
                                     <label class="radio-option">
                                         <input type="radio" name="like" value="no">
-                                        No
-                                    </label>
-                                    <label class="radio-option">
-                                        <input type="radio" name="like" value="maybe">
-                                        Maybe
+                                        Нет
                                     </label>
                                 </div>
                             </div>
@@ -158,10 +177,8 @@
                         </form>
                     </div>
                 </div>
-
             </div>
         </section>
-
     </main>
 
     <footer class="footer">
